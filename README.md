@@ -12,8 +12,8 @@ Next.js (App Router, TypeScript) frontend for the Real-Time Product Management D
 - Toast notifications + skeleton loading states
 
 ## Demo Credentials
-- Email: demo@demo.com
-- Password: DemoPass123
+- Email: patrick@demo.com
+- Password: demopass123
 
 ## Prerequisites
 - Node.js 18+
