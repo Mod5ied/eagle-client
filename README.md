@@ -43,13 +43,10 @@ service cloud.firestore {
 }
 ```
 
-Note: In production, implement proper authentication-based rules instead of `if true`.
-
 ## Scripts
 - `pnpm dev` - start dev server
 - `pnpm build` - build production
 - `pnpm start` - start production build
-- `pnpm test` - run integration tests (to be added)
 
 ## Install
 ```bash
@@ -86,16 +83,6 @@ pnpm dlx shadcn-ui add button dialog input table
 - Responsive table + mobile stacked cards
 - Analytics charts (status distribution, category counts, inventory value over time)
 
-## Acceptance Criteria Verification
-| Criterion | Status |
-| --------- | ------ |
-| Login sets httpOnly JWT cookie; unauthorized redirected | COMPLETE Middleware + backend cookie |
-| Real-time table updates from Firestore | COMPLETE Listener updates entity adapter instantly |
-| CRUD reflects without manual refresh | COMPLETE Firestore listener + RTK Query invalidation |
-| 2-3 meaningful charts from Firestore | COMPLETE 3 charts implemented |
-| Clean responsive UI with Shadcn components | COMPLETE Desktop + mobile card layout |
-| README with setup steps | COMPLETE This document |
-
 ## Running Locally
 1. Clone backend & start it (ensure `NEXT_PUBLIC_API_URL` points to backend host).
 2. Create `.env.local` using example file.
@@ -109,9 +96,6 @@ pnpm install
 pnpm dev
 ```
 6. Open http://localhost:3000 and login with demo credentials.
-
-## .env.example
-See `.env.example` file (create if missing) with required Firebase and API variables.
 
 ## Scripts
 ```bash
